@@ -1,0 +1,5 @@
+<form>
+  <label for="name">Enter your name: </label>
+  <input id="name" type="text" placeholder="Name" [(ngModel)]="name" name="name">
+</form>
+<h3 *ngIf="name">Hello, {{ name }}</h3>

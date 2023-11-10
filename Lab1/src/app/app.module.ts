@@ -5,14 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Task1Component } from './task1/task1.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { Task2Component } from './task2/task2.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     Task1Component,
-    NavbarComponent
+    NavbarComponent,
+    Task2Component
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],
