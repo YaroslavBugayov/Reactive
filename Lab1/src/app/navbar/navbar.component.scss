@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  background: whitesmoke;
+  padding: 10px;
+  box-shadow: 1px 1px 2px 2px darkgrey;
+  border-radius: 3px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: dimgrey;
+  font-size: 18px;
+}
+
+a:hover {
+  color: black;
+}
