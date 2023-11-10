@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { Task1Component } from './task1/task1.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Task2Component } from './task2/task2.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import {FormsModule} from "@angular/forms";
   imports: [
     FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

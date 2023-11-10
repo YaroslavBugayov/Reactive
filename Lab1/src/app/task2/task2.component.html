@@ -1,5 +1,22 @@
-<form>
-  <label for="name">Enter your name: </label>
-  <input id="name" type="text" placeholder="Name" [(ngModel)]="name" name="name">
+<h2>Shopping list</h2>
+<hr>
+
+<form [formGroup]="productForm">
+  <input type="text" name="name" placeholder="Name" formControlName="name">
+  <input type="number" name="price" placeholder="Price" formControlName="price">
+  <input type="button" value="Add product" [disabled]="productForm.invalid" (click)="addProduct()">
 </form>
-<h3 *ngIf="name">Hello, {{ name }}</h3>
+
+<table>
+  <tr *ngIf="products.length">
+    <th>Name</th>
+    <th>Price</th>
+    <th>Bought</th>
+  </tr>
+  <tr *ngFor="let product of products">
+    <td>{{ product.name }}</td>
+    <td>{{ product.price }}</td>
+    <td><input type="checkbox" value="{{ product.isBought }}"></td>
+  </tr>
+</table>
+

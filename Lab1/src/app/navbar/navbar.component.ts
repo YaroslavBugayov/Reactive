@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   items = [
     { title: 'Task1', url: 'task1' },
-    { title: 'Task2', url: 'task2' },
-    { title: 'Task3', url: 'task3' },
-    { title: 'Task4', url: 'task4' }
+    { title: 'Task2', url: 'task2' }
   ]
 }

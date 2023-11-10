@@ -1,13 +1,29 @@
-label {
-  font-size: 20px;
+* {
+  margin: 5px 0;
 }
 
-h3 {
-  font-size: 24px;
+form {
+  display: flex;
+  gap: 5px
 }
 
 input {
-  padding: 3px;
-  font-size: 16px;
+  padding: 5px;
 }
 
+table {
+  min-width: 500px;
+}
+
+td, th {
+  padding: 5px;
+  border-bottom: black 1px solid;
+}
+
+th {
+  text-align: left;
+}
+
+tr:hover {
+  border: 1px solid black;
+}
