@@ -1,0 +1,44 @@
+<div class="content">
+  <!-- Exercise 1 -->
+  <div>
+    <label for="nameInput">Enter your name: </label>
+    <input id="nameInput" type="text" [value]="name">
+  </div>
+  <!-- Exercise 2 -->
+  <div>
+    <label for="nameInput2">Enter your name: </label>
+    <input id="nameInput2" type="text" value="{{ name }}">
+  </div>
+  <!-- Exercise 3 -->
+  <div>
+    <p>Clicks: {{ counter }}</p>
+    <button (click)="increase()">Click</button>
+  </div>
+  <div>
+    <p>Clicks: {{ counter2 }}</p>
+    <button on-click="increase2()">Click</button>
+  </div>
+  <div>
+    <p>Clicks: {{ counter3 }}</p>
+    <button (click)="increase3($event)">Click</button>
+  </div>
+  <!-- Exercise 4 -->
+  <div>
+    <input type="text" [(ngModel)]="name2">
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="name2">
+  </div>
+  <!-- Exercise 5 -->
+  <div>
+    <table border="1">
+      <tr><th [attr.colspan]="colspan">Header</th></tr>
+      <tr><td colspan="3">1-2-3</td><td colspan="2">4-5</td></tr>
+      <tr><td>6</td><td>7</td><td>9</td><td>10</td><td>11</td></tr>
+      <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr>
+    </table>
+    <button class="tableButton" (click)="colspanPlus()">+</button>
+    <button class="tableButton" (click)="colspanMinus()">-</button>
+  </div>
+</div>
+
