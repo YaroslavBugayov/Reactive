@@ -26,6 +26,9 @@ import { Practice2Component } from './practice2/practice2.component';
     ReactiveFormsModule
   ],
   providers: [],
+  exports: [
+    NavbarComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
