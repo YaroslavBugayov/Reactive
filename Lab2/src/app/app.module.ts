@@ -14,6 +14,8 @@ import { Component3Component } from './component3/component3.component';
 import {Child3Component} from "./component3/child3.component";
 import { Component4Component } from './component4/component4.component';
 import {Child4Component} from "./component4/child4.component";
+import { Component5Component } from './component5/component5.component';
+import {Child5Component} from "./component5/child5.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {Child4Component} from "./component4/child4.component";
     Component3Component,
     Child3Component,
     Component4Component,
-    Child4Component
+    Child4Component,
+    Component5Component,
+    Child5Component
   ],
   imports: [
     BrowserModule,
