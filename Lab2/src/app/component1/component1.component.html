@@ -3,6 +3,6 @@
 <h1>Welcome {{ name }}</h1>
 <input type="text" [(ngModel)]="username" placeholder="Username">
 <input type="email" [(ngModel)]="email" placeholder="Email">
-<app-childComponent [username]="username" [email]="email">
+<app-child [username]="username" [email]="email">
   <h3>Text from parent component</h3>
-</app-childComponent>
+</app-child>

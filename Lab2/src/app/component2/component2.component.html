@@ -1,0 +1,3 @@
+<input type="number" [(ngModel)]="age">
+<app-child2 [userName]="name" [userAge]="age" (onChanged)="onChanged($event)"></app-child2>
+<p>Count of clicks: {{ clicks }}</p>

@@ -1,7 +1,7 @@
 import {Component, Input} from "@angular/core";
 
 @Component({
-  selector: 'app-childComponent',
+  selector: 'app-child',
   template: `
     <h3>{{ title }}</h3>
     <ng-content></ng-content>
