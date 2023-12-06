@@ -1,0 +1,20 @@
+.postForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+input, button {
+  padding: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #DDD;
+  width: 150px;
+}
+
+button:hover {
+  background-color: #555;
+}
