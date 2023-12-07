@@ -1,1 +1,4 @@
-<p>directives6 works!</p>
+<p *otherIf="condition">(A) Condition is false</p>
+<p *otherIf="!condition">(B) Although the condition is true, this paragraph is displayed</p>
+<p>Condition: {{ condition }}</p>
+<button (click)="condition=!condition">Toggle</button>

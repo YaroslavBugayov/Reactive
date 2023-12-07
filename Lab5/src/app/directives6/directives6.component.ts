@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './directives6.component.scss'
 })
 export class Directives6Component {
-
+  condition: boolean = true
 }

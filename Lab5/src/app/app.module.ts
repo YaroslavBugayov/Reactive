@@ -21,6 +21,7 @@ import {FormsModule} from "@angular/forms";
 import {SizeDirective} from "./directives3/size.directive";
 import {WhileDirective} from "./directives4/while.directive";
 import {SumDirective} from "./directives5/sum.directive";
+import {OtherIfDirective} from "./directives6/otherIf.directive";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {SumDirective} from "./directives5/sum.directive";
     ValueDirective,
     SizeDirective,
     WhileDirective,
-    SumDirective
+    SumDirective,
+    OtherIfDirective
   ],
   imports: [
     BrowserModule,
