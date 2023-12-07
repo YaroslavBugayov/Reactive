@@ -16,6 +16,9 @@ import {ItalicDirective} from "./directives2/italic.derective";
 import {MouseboldDirective} from "./directives2/mousebold.directive";
 import {MouseitalicDirective} from "./directives2/mouseitalic.directive";
 import {HostmouseboldDirective} from "./directives2/hostmousebold.directive";
+import {ValueDirective} from "./directives3/value.directive";
+import {FormsModule} from "@angular/forms";
+import {SizeDirective} from "./directives3/size.directive";
 
 @NgModule({
   declarations: [
@@ -31,12 +34,15 @@ import {HostmouseboldDirective} from "./directives2/hostmousebold.directive";
     ItalicDirective,
     MouseboldDirective,
     MouseitalicDirective,
-    HostmouseboldDirective
+    HostmouseboldDirective,
+    ValueDirective,
+    SizeDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterOutlet
+    RouterOutlet,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './directives3.component.scss'
 })
 export class Directives3Component {
-
+  fontSize: number = 14
 }

@@ -1,1 +1,5 @@
-<p>directives3 works!</p>
+<p valuesize [defaultSize]="'14px'" selectedSize="30px">Hello Angular</p>
+<hr>
+<label>Enter font size</label>
+<input type="text" placeholder="Font size" [(ngModel)]="fontSize">
+<p size [fontSize]="fontSize ? fontSize +'px' : '0' ">Current font size: {{ fontSize }}px</p>
