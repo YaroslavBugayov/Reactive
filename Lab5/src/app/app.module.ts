@@ -11,6 +11,11 @@ import { Directives4Component } from './directives4/directives4.component';
 import { Directives5Component } from './directives5/directives5.component';
 import { Directives6Component } from './directives6/directives6.component';
 import {RouterOutlet} from "@angular/router";
+import {BoldDirective} from "./directives2/bold.directive";
+import {ItalicDirective} from "./directives2/italic.derective";
+import {MouseboldDirective} from "./directives2/mousebold.directive";
+import {MouseitalicDirective} from "./directives2/mouseitalic.directive";
+import {HostmouseboldDirective} from "./directives2/hostmousebold.directive";
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import {RouterOutlet} from "@angular/router";
     Directives3Component,
     Directives4Component,
     Directives5Component,
-    Directives6Component
+    Directives6Component,
+    BoldDirective,
+    ItalicDirective,
+    MouseboldDirective,
+    MouseitalicDirective,
+    HostmouseboldDirective
   ],
   imports: [
     BrowserModule,
