@@ -20,6 +20,7 @@ import {ValueDirective} from "./directives3/value.directive";
 import {FormsModule} from "@angular/forms";
 import {SizeDirective} from "./directives3/size.directive";
 import {WhileDirective} from "./directives4/while.directive";
+import {SumDirective} from "./directives5/sum.directive";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {WhileDirective} from "./directives4/while.directive";
     HostmouseboldDirective,
     ValueDirective,
     SizeDirective,
-    WhileDirective
+    WhileDirective,
+    SumDirective
   ],
   imports: [
     BrowserModule,
