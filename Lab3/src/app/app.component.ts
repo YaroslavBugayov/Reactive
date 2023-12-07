@@ -11,7 +11,7 @@ export class AppComponent {
   private list = new TodoList("Yaroslav", [
     new TodoItem("Do the third laboratory work"),
     new TodoItem("Get some sleep"),
-    new TodoItem("Submit laboratory work")
+    new TodoItem("Submit laboratory work", true)
   ])
 
   get username(): string {
@@ -24,6 +24,7 @@ export class AppComponent {
 
   get items(): readonly TodoItem[] {
     return this.list.items.filter(item => this.showComplete || !item.complete)
+    // return this.list.items
   }
 
   addItem(newItem: string) {
@@ -32,5 +33,5 @@ export class AppComponent {
     }
   }
 
-  showComplete: boolean = false
+  showComplete: boolean = true
 }

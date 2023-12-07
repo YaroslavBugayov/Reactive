@@ -1,0 +1,53 @@
+<div [class.verdanaFont]="isVerdana">
+  <h1>Hello angular</h1>
+  <p [class.verdanaFont]="isVerdana" [class.segoePrintFont]="isSegoe">
+    Angular represents a modular application architecture
+  </p>
+</div>
+
+<div [ngClass]="{ verdanaFont: isVerdana }">
+  <h1>Hello angular</h1>
+  <p [ngClass]="{ segoePrintFont: isSegoe }">
+    Angular represents a modular application architecture
+  </p>
+</div>
+
+<div [ngClass]="currentClass">
+  <h1>Hello angular</h1>
+  <p>Angular represents a modular application architecture</p>
+</div>
+
+<hr>
+
+<div [ngStyle]="{ 'font-size': '13px', 'font-family': 'Verdana', 'color': 'green' }">
+  <h1>We study the directives</h1>
+  <p [ngStyle]="{ 'font-size': '16px', 'font-family': 'Segoe Print' }">
+    Using dynamic style changes
+  </p>
+</div>
+
+<div [style.fontSize]="'13px'" [style.fontFamily]="'Verdana'">
+  <h1>We study the directives</h1>
+  <p [style.fontSize]="'14px'" [style.fontFamily]="'Segoe Print'">
+    Using dynamic style changes
+  </p>
+</div>
+
+<hr>
+
+<div [ngClass]="{ invisible: !visibility }">
+  <h1>We study the directives</h1>
+  <p>Using dynamic style changes. Toggle 1</p>
+</div>
+
+<div [class.invisible]="!visibility">
+  <h1>We study the directives</h1>
+  <p>Using dynamic style changes. Toggle 2</p>
+</div>
+
+<div [style.display]="visibility ? 'block' : 'none'">
+  <h1>We study the directives</h1>
+  <p>Using dynamic style changes. Toggle 3</p>
+</div>
+
+<button (click)="toggle()">Toggle</button>
