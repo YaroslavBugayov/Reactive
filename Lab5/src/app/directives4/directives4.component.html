@@ -1,1 +1,57 @@
-<p>directives4 works!</p>
+<p *ngIf="condition">Hello world!</p>
+<ng-template [ngIf]="!condition">
+  <p >Goodbye world!</p>
+</ng-template>
+
+<p *ngIf="condition; else unset">Hello Angular</p>
+
+<ng-template #unset>
+  <p>Goodbye Angular</p>
+</ng-template>
+
+<div *ngIf="condition; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>Then template</ng-template>
+<ng-template #elseBlock>Else template</ng-template>
+
+<br>
+
+<button (click)="toggle()">Toggle</button>
+
+<hr>
+
+<ul>
+  <p><b>Shopping list:</b></p>
+  <li *ngFor="let item of items; let i = index">
+    {{ i+1 }}.{{ item }}
+  </li>
+</ul>
+
+<hr>
+
+<ul>
+  <p><b>Shopping list:</b></p>
+  <ng-template ngFor let-item [ngForOf]="items">
+    <li>{{item}}</li>
+  </ng-template>
+</ul>
+
+<hr>
+
+<div [ngSwitch]="dayOfWeek">
+  Day of week:
+  <ng-template [ngSwitchCase]="1">Monday</ng-template>
+  <ng-template [ngSwitchCase]="2">Tuesday</ng-template>
+  <ng-template [ngSwitchCase]="3">Wednesday</ng-template>
+  <ng-template [ngSwitchCase]="4">Thursday</ng-template>
+  <ng-template [ngSwitchCase]="5">Friday</ng-template>
+  <ng-template [ngSwitchCase]="6">Saturday</ng-template>
+  <ng-template [ngSwitchCase]="7">Sunday</ng-template>
+  <ng-template ngSwitchDefault>Unknown</ng-template>
+</div>
+<button (click)="nextDay()">+</button>
+<button (click)="previousDay()">-</button>
+
+<hr>
+
+<p *while="condition">While condition true</p>
+<p *while="!condition">While condition false</p>

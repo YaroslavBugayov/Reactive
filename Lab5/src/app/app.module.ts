@@ -19,6 +19,7 @@ import {HostmouseboldDirective} from "./directives2/hostmousebold.directive";
 import {ValueDirective} from "./directives3/value.directive";
 import {FormsModule} from "@angular/forms";
 import {SizeDirective} from "./directives3/size.directive";
+import {WhileDirective} from "./directives4/while.directive";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {SizeDirective} from "./directives3/size.directive";
     MouseitalicDirective,
     HostmouseboldDirective,
     ValueDirective,
-    SizeDirective
+    SizeDirective,
+    WhileDirective
   ],
   imports: [
     BrowserModule,
