@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'directives4', component: Directives4Component },
   { path: 'directives5', component: Directives5Component },
   { path: 'directives6', component: Directives6Component },
+  { path: '**', component: Directives1Component }
 ];
 
 @NgModule({
