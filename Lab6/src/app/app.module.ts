@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Pipes1Component } from './pipes1/pipes1.component';
-import {NavbarComponent} from "./navbar/navbar.component";
+import { Pipes1Component } from './components/pipes1/pipes1.component';
+import {NavbarComponent} from "./components/navbar/navbar.component";
 import {RouterOutlet} from "@angular/router";
-import {FormatPipe} from "./pipes1/format.pipe";
-import {JoinPipe} from "./pipes1/join.pipe";
-import {RootPipe} from "./pipes1/root.pipe";
+import {FormatPipe} from "./pipes/format.pipe";
+import {JoinPipe} from "./pipes/join.pipe";
+import {RootPipe} from "./pipes/root.pipe";
+import { Pipes2Component } from './components/pipes2/pipes2.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import {RootPipe} from "./pipes1/root.pipe";
     Pipes1Component,
     FormatPipe,
     JoinPipe,
-    RootPipe
+    RootPipe,
+    Pipes2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterOutlet
+    RouterOutlet,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

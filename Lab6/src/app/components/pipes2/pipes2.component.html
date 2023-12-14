@@ -1,0 +1,15 @@
+<input [(ngModel)]="num" name="fact">
+<p>Result: {{ num | format }}</p>
+
+<hr>
+
+<input #ingredient type="text" name="ingredient" placeholder="Enter new ingredient">
+<button (click)="pizzaIngredients.push(ingredient.value); ingredient.value = ''">Add</button>
+<p>{{ pizzaIngredients | join }}</p>
+
+<hr>
+
+<p>Async</p>
+<p>Pizza ingredients: </p>
+<p>{{ pizzaIngredient | async }}</p>
+<button (click)="showIngredients()">Show</button>
