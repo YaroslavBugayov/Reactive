@@ -1,0 +1,47 @@
+<p>Without formatting: {{ myDate }}</p>
+<p>With formatting: {{ myDate | date }}</p>
+<p>Number with currency pipe: {{ num | currency }}</p>
+<p>Number with percent pipe: {{ num | percent }}</p>
+<p>Text with uppercase pipe: {{ name | uppercase }}</p>
+<p>Text with lowercase pipe: {{ name | lowercase }}</p>
+<p>Number with decimal pipe: {{ numString | number }}</p>
+<p>Text with slice pipe from 2 to 7 symbol: {{ name | slice:2:7 }}</p>
+
+<hr>
+
+<p>Date with custom formatting: {{ currentDate | date:"dd:MM:yyyy" }}</p>
+<p>Number formatting: {{ num | number:'2.0-1' }}</p>
+
+<hr>
+
+<p>Money format 1: {{ num | currency:'UAH':'code' }}</p>
+<p>Money format 2: {{ num | currency:'UAH':'symbol-narrow' }}</p>
+<p>Money format 3: {{ num | currency:'CAD':'symbol' }}</p>
+<p>Money format 4: {{ num | currency:'CAD':'symbol-narrow':'1.0-1' }}</p>
+<p>Money format 5: {{ num | currency:'UAH':'Hryvnias : ' }}</p>
+
+<hr>
+
+<p>Text with several pipes: {{ name | slice:2:7 | uppercase }}</p>
+
+<hr>
+
+<p>Custom format pipe</p>
+<p>Number before formatting: {{ num }}</p>
+<p>Number after formatting: {{ num | format }}</p>
+
+<hr>
+
+<p>Join pipe</p>
+<p>All ingredients:</p>
+<p>{{ pizzaIngredients | join }}</p>
+<p>From index 2:</p>
+<p>{{ pizzaIngredients | join:2 }}</p>
+<p>From 1 to 3:</p>
+<p>{{ pizzaIngredients | join:1:3 }}</p>
+
+<hr>
+
+<p>Square root pipe</p>
+<p>{{ num | root | number:'1.0-2' }}</p>
+
