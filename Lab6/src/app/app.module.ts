@@ -11,6 +11,8 @@ import {JoinPipe} from "./pipes/join.pipe";
 import {RootPipe} from "./pipes/root.pipe";
 import { Pipes2Component } from './components/pipes2/pipes2.component';
 import {FormsModule} from "@angular/forms";
+import { Pipes3Component } from './components/pipes3/pipes3.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import {FormsModule} from "@angular/forms";
     FormatPipe,
     JoinPipe,
     RootPipe,
-    Pipes2Component
+    Pipes2Component,
+    Pipes3Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
