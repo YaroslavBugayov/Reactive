@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 export interface Post {
   title: string,
   text: string,
-  id?: number
+  id?: number,
+  date: Date
 }
 
 @Component({
@@ -13,9 +14,20 @@ export interface Post {
 })
 export class AppComponent {
   posts: Post[] = [
-    { title: 'I study the components', text: 'I am creating a "Blog" project', id: 2 },
-    { title: 'I study the directives', text: 'Still creating the "Blog" project', id: 1 }
+    {
+      title: 'I study the components',
+      text: 'I am creating a "Blog" project',
+      id: 2,
+      date: new Date(2017, 4, 12, 15, 32, 55)
+    },
+    {
+      title: 'I study the directives',
+      text: 'Still creating the "Blog" project',
+      id: 1,
+      date: new Date(2015, 11, 29, 21, 21, 12)
+    }
   ]
+  search: string = ''
 
   updatePost(post: Post) {
     let ids = this.posts.map(post => post.id)
